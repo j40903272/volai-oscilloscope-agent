@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oscilloscope-agent"
+version = "0.1.0"
+description = "Natural language agent and MCP server for oscilloscope control"
+authors = [{name = "YUN DA", email = "your.email@example.com"}]
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+dependencies = [
+    "pyvisa>=1.14.1",
+    "pyvisa-py>=0.7.1",
+    "mcp>=0.9.0",
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "pydantic>=2.5.3",
+    "anthropic>=0.18.1",
+    "langchain>=0.1.6",
+    "langchain-anthropic>=0.1.4",
+    "python-dotenv>=1.0.0",
+    "numpy>=1.26.3",
+    "pandas>=2.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.4",
+    "black>=24.1.1",
+    "ruff>=0.1.14",
+    "mypy>=1.8.0",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py39', 'py310', 'py311']
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N", "W"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+

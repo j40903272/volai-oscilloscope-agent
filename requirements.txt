@@ -1,0 +1,42 @@
+# Core dependencies
+pyvisa==1.14.1
+
+# MCP Server
+mcp==1.1.2
+fastapi==0.109.0
+uvicorn==0.31.1
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# Agent & LLM (Claude - always installed)
+anthropic==0.39.0
+httpx==0.27.2
+langchain==0.3.7
+langchain-anthropic==0.3.0
+langchain-core==0.3.17
+langchain-community==0.3.5
+
+# Optional: HuggingFace Local Models (comment out if you only use Claude)
+# Uncomment these OR install with: pip install -r requirements-huggingface.txt
+# transformers==4.44.2
+# torch==2.4.1
+# accelerate==0.34.2
+# sentencepiece==0.2.0
+# langchain-huggingface==0.1.0
+
+# Utilities
+python-dotenv==1.0.0
+numpy==1.26.3
+pandas==2.2.0
+
+# Web Interface
+streamlit==1.39.0
+plotly==5.24.1
+Pillow==10.2.0
+
+# Development
+pytest==7.4.4
+black==24.1.1
+ruff==0.1.14
+mypy==1.8.0
+

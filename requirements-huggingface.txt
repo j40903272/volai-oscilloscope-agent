@@ -1,0 +1,10 @@
+# Additional dependencies for HuggingFace local models
+# Install these ONLY if you want to use local models
+
+torch>=2.0.0
+transformers>=4.30.0
+langchain-huggingface>=0.0.1
+accelerate>=0.20.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+
